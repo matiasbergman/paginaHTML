@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matias Bergman Mercado - Presentación</title>
+
+  <meta name="description"
+    content="Página de presentación de Matias Bergman Mercado, estudiante de Ciencias de la Computación en la USFX." />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Header con navegación -->
+  <header class="header">
+    <div class="header__container">
+
+      <div class="header__brand">
+        <h1 class="header__name">Matias Bergman Mercado</h1>
+        <p class="header__tagline">Estudiante de Ciencias de la Computación — USFX</p>
+      </div>
+
+      <!-- FOTO (arriba derecha) -->
+      <div class="header__photo">
+        <img src="img/foto-matias.jpeg" alt="Foto de Matias Bergman Mercado" class="header__photo-img" />
+      </div>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#inicio" class="nav__link nav__link--active">Inicio</a>
+          </li>
+          <li class="nav__item">
+            <a href="#sobre-mi" class="nav__link">Sobre mí</a>
+          </li>
+          <li class="nav__item">
+            <a href="#proyectos" class="nav__link">Proyectos</a>
+          </li>
+          <li class="nav__item">
+            <a href="#habilidades" class="nav__link">Habilidades</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contacto" class="nav__link">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+      <div class="hero__container">
+        <h2 class="hero__title">¡Hola! Soy Matias 👋</h2>
+
+        <p class="hero__subtitle">
+          Estudiante de primer semestre en Ciencias de la Computación
+        </p>
+
+        <p class="hero__description">
+          Esta es la primera vez que creo una página web completa usando HTML y CSS.
+          La hice como parte de una tarea universitaria, y mi objetivo es presentar quién soy,
+          qué me motivó a estudiar esta carrera y en qué estoy aprendiendo actualmente.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#sobre-mi" class="button button--primary">Ver presentación</a>
+          <a href="#contacto" class="button button--secondary">Ir a contacto</a>
+        </div>
+
+        <div class="hero__stats" aria-label="Datos rápidos">
+          <div class="stat">
+            <span class="stat__number">✔</span>
+            <span class="stat__label">Ingreso libre a la facultad</span>
+          </div>
+
+          <div class="stat">
+            <span class="stat__number">B3</span>
+            <span class="stat__label">Inglés — Certificación CUREX</span>
+          </div>
+
+          <div class="stat">
+            <span class="stat__number">3+</span>
+            <span class="stat__label">Certificados en robótica</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre Mí -->
+    <section class="about" id="sobre-mi">
+      <div class="about__container">
+        <h2 class="about__title">Sobre mí</h2>
+
+        <p class="about__intro">
+          Soy estudiante de la carrera de <strong>Ciencias de la Computación</strong> en la USFX.
+          Me interesa la tecnología desde hace tiempo, especialmente todo lo relacionado con
+          computadoras, programación y creación de soluciones.
+        </p>
+
+        <p class="about__text">
+          Decidí estudiar la carrera de Ciencias de la Computación por varios motivos, pero los principales fueron:
+          el amplio ámbito laboral, porque me gustan bastante las computadoras y la programación, y porque mi padre
+          (ingeniero en sistemas) me aconsejó esta carrera ya que con una computadora e internet se puede trabajar
+          desde casa y a un ritmo más flexible. Además, otra persona que me motivó a seguir este camino fue mi profesor
+          de los cursos de robótica de la USFX.
+        </p>
+
+        <div class="values">
+          <h3 class="values__title">Lo que me caracteriza</h3>
+          <ul class="values__list">
+            <li class="values__item">
+              <span class="values__icon">🎯</span>
+              <strong>Constancia</strong>
+              <span>Practico cada día para mejorar poco a poco.</span>
+            </li>
+
+            <li class="values__item">
+              <span class="values__icon">📚</span>
+              <strong>Curiosidad</strong>
+              <span>Me gusta entender cómo funcionan las cosas.</span>
+            </li>
+
+            <li class="values__item">
+              <span class="values__icon">🧠</span>
+              <strong>Aprendizaje</strong>
+              <span>Estoy empezando, pero con ganas de avanzar.</span>
+            </li>
+
+            <li class="values__item">
+              <span class="values__icon">💡</span>
+              <strong>Creatividad</strong>
+              <span>Busco soluciones simples y prácticas.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section class="projects" id="proyectos">
+      <div class="projects__container">
+        <h2 class="projects__title">Proyectos</h2>
+
+        <p class="projects__description">
+          Estos son algunos proyectos simples que realicé con unos cursos de HTML y CSS a manera de práctica mientras aprendo desarrollo web.
+          (Estoy empezando, así que son proyectos básicos)
+        </p>
+
+        <div class="projects__grid">
+
+          <article class="project">
+            <h3 class="project__title">Mi primera página web</h3>
+
+            <p class="project__description">
+              Un proyecto básico con HTML y CSS donde practiqué estructura, estilos y orden del contenido.
+            </p>
+
+            <h4 class="project__subtitle">Lo que practiqué:</h4>
+            <ul class="project__learnings">
+              <li>Estructura semántica con HTML</li>
+              <li>Uso de clases y orden visual</li>
+              <li>Box model (márgenes, padding y tamaños)</li>
+              <li>Tipografía y espaciado</li>
+              <li>Diseño adaptable (responsivo básico)</li>
+            </ul>
+
+            <div class="project__technologies">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+            </div>
+          </article>
+
+          <article class="project project--featured">
+            <span class="project__badge">Principal</span>
+
+            <h3 class="project__title">Página de presentación (esta)</h3>
+
+            <p class="project__description">
+              Esta página es parte de una tarea universitaria y fue mi primer intento de crear
+              una presentación personal completa en una sola web.
+            </p>
+
+            <h4 class="project__subtitle">Lo que apliqué:</h4>
+            <ul class="project__learnings">
+              <li>Organización por secciones</li>
+              <li>Uso de estilos consistentes</li>
+              <li>Paleta de colores cálida y suave</li>
+              <li>Diseño simple, limpio y legible</li>
+              <li>Buenas prácticas básicas con BEM</li>
+            </ul>
+
+            <div class="project__technologies">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">BEM</span>
+            </div>
+          </article>
+
+          <article class="project">
+            <h3 class="project__title">Prácticas de contenido</h3>
+
+            <p class="project__description">
+              Un espacio donde practico textos, jerarquía visual y presentación de información.
+            </p>
+
+            <h4 class="project__subtitle">Enfoque:</h4>
+            <ul class="project__learnings">
+              <li>Tipografía clara</li>
+              <li>Jerarquía con títulos y párrafos</li>
+              <li>Espaciado y consistencia visual</li>
+              <li>Uso correcto de listas</li>
+              <li>Estilo minimalista</li>
+            </ul>
+
+            <div class="project__technologies">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section class="skills" id="habilidades">
+      <div class="skills__container">
+        <h2 class="skills__title">Mis habilidades</h2>
+
+        <h3 class="skills__subtitle">Tecnologías que estoy aprendiendo</h3>
+
+        <div class="skills__list">
+          <div class="skill">
+            <h4 class="skill__name">HTML5</h4>
+            <div class="skill__bar">
+              <div class="skill__progress skill__progress--html"></div>
+            </div>
+            <span class="skill__percentage">45%</span>
+          </div>
+
+          <div class="skill">
+            <h4 class="skill__name">CSS3</h4>
+            <div class="skill__bar">
+              <div class="skill__progress skill__progress--css"></div>
+            </div>
+            <span class="skill__percentage">20%</span>
+          </div>
+
+          <div class="skill">
+            <h4 class="skill__name">JavaScript (iniciando)</h4>
+            <div class="skill__bar">
+              <div class="skill__progress skill__progress--js"></div>
+            </div>
+            <span class="skill__percentage">5%</span>
+          </div>
+        </div>
+
+        <div class="learning">
+          <h3 class="learning__title">Actualmente aprendiendo:</h3>
+          <ul class="learning__list">
+            <li class="learning__item">HTML5 en mayor profundidad</li>
+            <li class="learning__item">CSS para diseño y estilo</li>
+            <li class="learning__item">Paletas de colores y estética</li>
+            <li class="learning__item">Buenas prácticas para organizar el código</li>
+            <li class="learning__item">Diseño adaptable (responsivo)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact" id="contacto">
+      <div class="contact__container">
+        <h2 class="contact__title">Contacto</h2>
+
+        <p class="contact__description">
+          Si desea contactarme por temas académicos o para darme sugerencias, aquí están mis datos:
+        </p>
+
+        <div class="contact__methods">
+          <div class="contact__method">
+            <h3 class="contact__method-title">📧 Email</h3>
+            <p class="contact__link">matiasbergman55@gmail.com</p>
+          </div>
+
+          <div class="contact__method">
+            <h3 class="contact__method-title">📷 Instagram</h3>
+            <p class="contact__link">@mty_berg</p>
+          </div>
+
+          <div class="contact__method">
+            <h3 class="contact__method-title">📱 WhatsApp</h3>
+            <p class="contact__link">+591 65252497</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <nav class="footer__nav" aria-label="Navegación de pie de página">
+        <a href="#inicio" class="footer__link">Inicio</a>
+        <a href="#sobre-mi" class="footer__link">Sobre mí</a>
+        <a href="#proyectos" class="footer__link">Proyectos</a>
+        <a href="#habilidades" class="footer__link">Habilidades</a>
+        <a href="#contacto" class="footer__link">Contacto</a>
+      </nav>
+
+      <p class="footer__copyright">
+        © 2025 Matias Bergman Mercado
+      </p>
+
+      <p class="footer__credits">
+        Hecho como práctica en HTML y CSS para una tarea universitaria.
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

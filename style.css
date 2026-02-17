@@ -1,0 +1,597 @@
+/* ===========================================
+   1. RESET BÁSICO
+   =========================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===========================================
+   2. VARIABLES (PALETA CÁLIDA, PASTEL)
+   =========================================== */
+:root {
+  --bg: #fff7fb;           /* rosa pastel casi blanco */
+  --surface: #ffffff;      /* blanco para tarjetas */
+  --text: #3d2f2a;         /* marrón oscuro suave */
+  --muted: #6b5a54;        /* texto secundario */
+
+  --border: #edd8df;
+
+  --accent-1: #f6c6a4;     /* naranja pastel (hero) */
+  --accent-2: #63a361;     /* verde botones */
+  --accent-3: #efa38f;     /* coral pastel hover */
+
+  --shadow: 0 10px 30px rgba(40, 20, 25, 0.08);
+
+  --radius: 18px;
+}
+
+/* ===========================================
+   3. BASE
+   =========================================== */
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+/* ===========================================
+   4. TIPOGRAFÍA GENERAL
+   =========================================== */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 14px;
+  color: var(--text);
+}
+
+h1 {
+  font-size: 34px;
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-top: 40px;
+}
+
+h3 {
+  font-size: 22px;
+  margin-top: 22px;
+}
+
+h4 {
+  font-size: 16px;
+  margin-top: 18px;
+  color: var(--muted);
+}
+
+p {
+  margin-bottom: 16px;
+  color: var(--muted);
+}
+
+strong {
+  font-weight: 800;
+  color: var(--text);
+}
+
+/* ===========================================
+   5. HEADER
+   =========================================== */
+.header {
+  padding: 22px 0 10px 0;
+}
+
+.header__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.header__brand {
+  text-align: center;
+  margin-top: 14px;
+  padding: 10px 0 18px 0;
+}
+
+.header__name {
+  margin-bottom: 6px;
+}
+
+.header__tagline {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+/* FOTO ARRIBA DERECHA */
+.header__photo {
+  position: absolute;
+  top: 40px;
+  right: 80px;
+
+  width: 92px;
+  height: 92px;
+  border-radius: 999px;
+
+  background: #ffffff;
+  border: 2px solid rgba(0, 0, 0, 0.08);
+  box-shadow: var(--shadow);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.header__photo-img {
+  width: 110px;
+  height: 110px;
+  border-radius: 999px;
+  object-fit: cover;
+}
+
+/* ===========================================
+   6. NAVEGACIÓN
+   =========================================== */
+.nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.nav__list {
+  display: inline-flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px 14px;
+
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  box-shadow: 0 10px 25px rgba(40, 20, 25, 0.05);
+}
+
+.nav__item {
+  list-style: none;
+}
+
+.nav__link {
+  display: inline-block;
+  padding: 10px 14px;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 700;
+  border-radius: 999px;
+  transition: 0.2s ease;
+}
+
+.nav__link:hover {
+  background: rgba(246, 198, 164, 0.45);
+}
+
+.nav__link--active {
+  background: rgba(246, 198, 164, 0.7);
+}
+
+/* ===========================================
+   7. MAIN
+   =========================================== */
+.main {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 0 20px;
+}
+
+/* ===========================================
+   8. HERO
+   =========================================== */
+.hero {
+  padding: 60px 0;
+  text-align: center;
+  background-color: var(--accent-1);
+  border-radius: var(--radius);
+  margin: 18px 0 46px 0;
+  box-shadow: var(--shadow);
+}
+
+.hero__container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 22px;
+}
+
+.hero__title {
+  font-size: 46px;
+  color: var(--text);
+  margin-bottom: 14px;
+  letter-spacing: -1px;
+}
+
+.hero__subtitle {
+  font-size: 20px;
+  color: var(--text);
+  margin-bottom: 18px;
+  font-weight: 800;
+}
+
+.hero__description {
+  font-size: 17px;
+  color: rgba(61, 47, 42, 0.85);
+  margin-bottom: 26px;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__actions {
+  margin-bottom: 30px;
+}
+
+/* Stats */
+.hero__stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.stat {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  border-radius: 16px;
+  padding: 16px 14px;
+}
+
+.stat__number {
+  display: block;
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.stat__label {
+  display: block;
+  font-size: 14px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+/* ===========================================
+   9. BOTONES
+   =========================================== */
+.button {
+  display: inline-block;
+  padding: 12px 22px;
+  margin: 6px;
+  font-size: 16px;
+  font-weight: 800;
+  text-align: center;
+  border: 2px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 999px;
+  transition: 0.2s ease;
+}
+
+.button--primary {
+  background-color: var(--accent-2);
+  color: #ffffff;
+  border-color: rgba(61, 47, 42, 0.35);
+}
+
+.button--primary:hover {
+  background-color: #4f8e4d;
+  transform: translateY(-1px);
+}
+
+.button--secondary {
+  background-color: rgba(255, 255, 255, 0.85);
+  color: var(--text);
+  border-color: rgba(61, 47, 42, 0.25);
+}
+
+.button--secondary:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transform: translateY(-1px);
+}
+
+/* ===========================================
+   10. SECCIONES
+   =========================================== */
+.about,
+.projects,
+.skills,
+.contact {
+  margin-bottom: 44px;
+}
+
+.about__container,
+.projects__container,
+.skills__container,
+.contact__container {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px 26px;
+  box-shadow: 0 12px 35px rgba(40, 20, 25, 0.06);
+}
+
+/* ===========================================
+   11. VALUES
+   =========================================== */
+.values__title {
+  margin-top: 18px;
+}
+
+.values__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-top: 14px;
+}
+
+.values__item {
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: rgba(255, 247, 251, 0.6);
+}
+
+.values__icon {
+  font-size: 22px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.values__item strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.values__item span {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+/* ===========================================
+   12. PROYECTOS
+   =========================================== */
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.project {
+  background: rgba(255, 247, 251, 0.55);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.project--featured {
+  background: rgba(246, 198, 164, 0.25);
+  border: 1px solid rgba(246, 198, 164, 0.65);
+}
+
+.project__badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(99, 163, 97, 0.18);
+  color: #2f5a2f;
+  font-weight: 900;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.project__description {
+  margin-bottom: 12px;
+}
+
+.project__learnings {
+  padding-left: 18px;
+  margin-top: 10px;
+  margin-bottom: 14px;
+}
+
+.project__learnings li {
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.project__technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.85);
+  font-weight: 800;
+  font-size: 13px;
+  color: var(--text);
+}
+
+/* ===========================================
+   13. HABILIDADES
+   =========================================== */
+.skills__subtitle {
+  margin-top: 10px;
+  color: var(--muted);
+}
+
+.skills__list {
+  margin-top: 18px;
+  display: grid;
+  gap: 16px;
+}
+
+.skill {
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 16px;
+  background: rgba(255, 247, 251, 0.55);
+}
+
+.skill__name {
+  margin-bottom: 12px;
+}
+
+.skill__bar {
+  width: 100%;
+  height: 12px;
+  border-radius: 999px;
+  background: rgba(61, 47, 42, 0.08);
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.skill__progress {
+  height: 100%;
+  border-radius: 999px;
+}
+
+.skill__progress--html {
+  width: 45%;
+  background: var(--accent-2);
+}
+
+.skill__progress--css {
+  width: 20%;
+  background: var(--accent-3);
+}
+
+.skill__progress--js {
+  width: 5%;
+  background: rgba(61, 47, 42, 0.55);
+}
+
+.skill__percentage {
+  font-weight: 800;
+  color: var(--muted);
+}
+
+/* Learning */
+.learning {
+  margin-top: 22px;
+  padding: 16px;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  background: rgba(246, 198, 164, 0.18);
+}
+
+.learning__list {
+  padding-left: 18px;
+  margin-top: 10px;
+}
+
+.learning__item {
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-weight: 650;
+}
+
+/* ===========================================
+   14. CONTACTO
+   =========================================== */
+.contact__methods {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.contact__method {
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 16px;
+  background: rgba(255, 247, 251, 0.55);
+}
+
+.contact__method-title {
+  margin-bottom: 10px;
+}
+
+.contact__link {
+  font-weight: 800;
+  color: var(--text);
+}
+
+/* ===========================================
+   15. FOOTER
+   =========================================== */
+.footer {
+  margin-top: 40px;
+  padding: 30px 0;
+}
+
+.footer__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  text-align: center;
+  color: var(--muted);
+}
+
+.footer__nav {
+  margin-bottom: 14px;
+}
+
+.footer__link {
+  margin: 0 10px;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__credits {
+  margin-top: 8px;
+}
+
+/* ===========================================
+   16. RESPONSIVE
+   =========================================== */
+@media (max-width: 900px) {
+  .projects__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__stats {
+    grid-template-columns: 1fr;
+  }
+
+  .values__list {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__methods {
+    grid-template-columns: 1fr;
+  }
+
+  .header__photo {
+    position: static;
+    margin: 12px auto 0 auto;
+  }
+}
